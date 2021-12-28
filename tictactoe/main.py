@@ -1,18 +1,18 @@
-name_1 = input('Введите Ваше имя: ')
-name_2 = input('Введите Ваше имя: ')
-print(f'Добрый день,{name_1} и {name_2} добро пожаловать в игру "Крестики-нолики" ')
+NameFirst = input('Игрок за крестики: ')
+NameSecond = input('Игрок за нолики: ')
+print(f'Приветствуем вас,{NameFirst} и {NameSecond}. Сыграем в "Крестики-нолики" ')
 print('Первыми играют крестики')
 field = [['-']*3 for _ in range(3)]
 
-def show_field(f):
+def FieldShow(f):
     print('  0 1 2')
     for i in range(len(field)):
         print(str(i) + " " + " ".join(field[i]))
 
-def user_input(f):
+def UserInput(f):
     while True:
         place = input(
-            "Ваш ход, введите, пожалуйста, желаемые координаты: ").split()
+            "Ваш ход, введите координаты: ").split()
         if len(place) != 2:
             print("Введите, пожалуйста, только две координаты через пробел")
             continue
@@ -22,31 +22,26 @@ def user_input(f):
         x, y = map(int, place)
         if not(x >= 0 and x < 3 and y >= 0 and y < 3):
             print('Введенные координаты выходят за пределы поля, '
-                  'введите, пожалуйста, координаты, соотвествующие полю игры "Крестики-нолики" ')
+                  'введите, пожалуйста, координаты в границах поля "Крестики-нолики" ')
             continue
         if f[x][y] != "-":
             print(
-                "Клетка уже занята, введите, пожалуйста другие координаты, чтобы продолжить игру")
+                "Клетка уже занята. Для продолжения введите, пожалуйста, другие координаты")
             continue
         break
     return x, y
 
-
-def win_1(f, user):
+def Winner(f, user):
     f_list = []
     for l in f:
         f_list += l
     positions = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6],
                  [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
-    indeces = set([i for i, x in enumerate(f_list) if x == user])
+    indexes = set([i for i, x in enumerate(f_list) if x == user])
     for p in positions:
-        if len(indeces.intersection(set(p))) == 3:
+        if len(indexes.intersection(set(p))) == 3:
             return True
-    # Было:
-    #     return False
-    # Стало:
     return False
-
 
 count = 0
 while True:
@@ -57,11 +52,11 @@ while True:
         user = 'x'
     else:
         user = 'o'
-    show_field(field)
-    x, y = user_input(field)
+    FieldShow(field)
+    x, y = UserInput(field)
     field[x][y] = user
-    if win_1(field, user):
-        print(f"Поздравляю, выйграл {user}")
-        show_field(field)
+    if Winner(field, user):
+        print(f"Поздравляем, выйграл {user}")
+        FieldShow(field)
         break
     count += 1
