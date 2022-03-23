@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea380bd5-1242-414e-a7d3-ad93fcf25772" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DjangoPro.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/fpages/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/g3n0mProject/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/g3n0mProject/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/g3n0mProject/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/g3n0mProject/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/g3n0mProject/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/static/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/static/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/static/js/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/templates/flatpages/contact_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/templates/flatpages/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/templates/flatpages/forvip.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g3n0mProject/templates/flatpages/privacy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NewsPaper" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -90,6 +69,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
