@@ -1,0 +1,36 @@
+{% extends 'flatpages/default.html' %}
+{% load censor_filter %}
+
+{% block title %}
+
+{% endblock title %}
+
+{% block content %}
+<a>Всего статей: {{ posts |length }}</a>
+<table class="table">
+            <tr>
+                <td>
+                    Дата
+                </td>
+                <td>
+                    Автор
+                </td>
+                <td>
+                    Статья
+                </td>
+                <td>
+                    Рейтинг
+                </td>
+            </tr>
+{% for post in posts %}
+<tr>
+    <td>{{ post.time_add_post |date:"D d-m-Y H:i" }}</td>
+    <td>{{ post.author.author_user }}</td>
+    <td align="left"><a href=/news/{{ post.id }}>{{ post.title_post}}</a><br>
+    {{ post.post_text | truncatewords:20 | censor }}</td>
+    <td>{{ post.author.rating }}</td>
+</tr>
+
+{% endfor %}
+</table>
+{% endblock content %}
