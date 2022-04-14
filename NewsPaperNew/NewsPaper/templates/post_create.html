@@ -1,0 +1,18 @@
+{% extends 'default.html' %}
+
+{% load censor_filter %}
+
+{% block title %}
+ Создать новость
+{% endblock title %}
+
+
+{% block content %}
+    <form class="col-form"  method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Сохранить">
+    </form>
+    <hr>
+    <a href="{% url 'news_list' %}">Назад к сиску новостей</a>
+{% endblock content %}
