@@ -1,0 +1,16 @@
+2022-04-08 23:44:57,249 ERROR "GET /news/ HTTP/1.1" 500 90192 D:\Projects\Skillfactory_projects\D13.4\venv\lib\site-packages\django\core\servers\basehttp.py None
+2022-04-08 23:45:18,762 ERROR "GET /news/ HTTP/1.1" 500 90199 D:\Projects\Skillfactory_projects\D13.4\venv\lib\site-packages\django\core\servers\basehttp.py None
+2022-04-08 23:46:10,493 ERROR  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:46:10,493 CRITICAL  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:46:10,493 ERROR  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:46:10,493 CRITICAL  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:46:10,494 ERROR  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:46:10,494 CRITICAL  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:47:40,813 ERROR  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:47:40,815 CRITICAL  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:47:40,816 ERROR  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:47:40,816 CRITICAL  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:47:40,816 ERROR  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:47:40,816 CRITICAL  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:47:40,817 ERROR  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
+2022-04-08 23:47:40,817 CRITICAL  D:\Projects\Skillfactory_projects\D13.4\NewsPaper\news\views.py None
