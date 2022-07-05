@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сообщение в техподдержку</title>
+</head>
+
+<body>
+    <h2>{{ message.name }}, Спасибо за обращение!</h2>
+    <br>
+    <p><strong>Тема: </strong>{{ message.subject }}</p>
+    <p><strong>Дата: </strong>{{ message.date|date:'d-m-Y H:i:s'}}</p>
+    <p><strong>Сообщение: </strong>{{ message.message }}</p>
+    <br/>
+    <p><strong>Email: </strong>{{ message.email }}</p>
+    <p><strong>Имя: </strong>{{ message.name}}</p>
+</body>
+    
+</html>

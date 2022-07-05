@@ -1,0 +1,28 @@
+{% extends 'theboard/main.html' %}
+{% load static %}
+
+{% block title %}Создать новый профиль{% endblock %}
+
+{% block content%}
+
+{% if user.is_authenticated %}
+    
+    <h1>Создать страницу профиля</h1>
+    </br></br>
+    <div class="form-group">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.media }}
+            {{ form.as_p }}
+            </br>
+            <button class="btn btn-secondary">Создать страницу профиля</button>
+            </br></br></br>
+    </div>
+    
+{% else %}
+
+    Доступ к данным закрыт!
+
+{% endif %}
+
+{% endblock %}

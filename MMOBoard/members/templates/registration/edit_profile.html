@@ -1,0 +1,22 @@
+{% extends 'theboard/main.html' %}
+
+{% block title %}Изменить профиль{% endblock %}
+
+{% block content%}
+
+<h1>Изменить профиль</h1>
+</br></br>
+
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }} 
+        </br>       
+        <a href="{% url 'change_password' %}" class="btn btn-secondary">Поменять пароль</a>
+        </br></br></br></br>
+        <button class="btn btn-secondary">Обновить профиль</button>
+        </br></br></br></br>
+</div>
+
+
+{% endblock %}

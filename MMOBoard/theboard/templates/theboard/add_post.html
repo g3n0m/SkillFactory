@@ -1,0 +1,25 @@
+{% extends 'theboard/main.html' %}
+
+{% block title %}Создать новую публикацию!{% endblock %}
+
+{% block content%}
+
+{% if user.is_authenticated %}
+    <h1>Создать публикацию.</h1>
+    </br></br>
+    <div class="form-group">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.media }}
+            {{ form.as_p }}
+            <button class="btn btn-secondary">Опубликовать</button>
+            </br></br></br></br>
+    </div>
+
+{% else %}
+
+Доступ к данным закрыт!
+
+{% endif %}
+
+{% endblock %}
