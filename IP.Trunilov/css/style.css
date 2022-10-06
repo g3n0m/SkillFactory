@@ -1,0 +1,728 @@
+@font-face {
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+    font-family: "Montserrat Regular";
+}
+
+@font-face {
+    src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+    font-family: "PlayfairDisplay Regular";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    min-width: 600px;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(185, 185, 185);
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+header {
+    background: url(../images/header-bg.jpg) no-repeat right;
+    height: 596px;    
+}
+@media screen and (max-width: 1400px) and (min-width: 1100px) {
+
+}
+
+header nav {
+    text-align: right;
+}
+
+header nav ul {
+    display: inline-block;
+    margin-right: 440px;
+    margin-top: 125px;
+}
+header nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+header nav li:last-child {
+    margin-right: 0px;
+}
+
+header nav a {
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .logo {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+header .logo .first {
+    font-family: 'PlayfairDisplay Regular', serif;
+    font-size: 70px;
+    line-height: 93px;    
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+header .logo .second {    
+    font-size: 25px;
+    line-height: 30px;    
+    color: #fff;
+    margin-top: 15px;
+}
+
+header .header-text {
+    color: #fff;
+    line-height: 30px;
+    margin-top: 70px;
+}
+header button {
+    display: inline-block;
+    text-align: center;
+    background-color: #F29F21;
+    border-radius: 40px;
+    border: none;
+    font-size: 25px;
+    font-weight: 550;
+    color: #fff;
+    padding: 23px 40px 26px 40px;
+    margin-top: 70px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+header button:hover {
+    background-color: #D38209;
+}
+
+main {
+    padding: 100px 120px;
+}
+
+/* -------- BLOCK: About Me --------- */
+
+.about-me {
+    display: flex;    
+    flex-flow: row nowrap;
+}
+.about-me > .photo {
+    flex-shrink: 0;
+    width: 546px;
+    height: 546px;
+}
+.about-me > .photo > img {
+    border: none;
+    border-radius: 20px;
+}
+.about-me > .welcome-text {
+    margin-left: 120px;
+}
+.about-me > .welcome-text > h1 {
+    font-size: 29px;
+    line-height: 35px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-weight: 400;
+}
+.about-me > .welcome-text > p {
+    margin-bottom: 1em;
+    line-height: 1.2em;
+}
+.about-me > .welcome-text > button {
+    display: inline-block;
+    text-align: center;
+    background-color: #F29F21;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: 550;
+    color: #fff;
+    padding: 17px 40px 19px 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+.about-me > .welcome-text > button:hover {
+    background-color: #D38209;
+}
+
+/* -------- BLOCK: Works --------- */
+
+.works {
+    margin-top: 100px;
+}
+
+.works > .title > h2 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 50px;
+}
+.works > .title.last > h2 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.works > .projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-block {
+    width: 405px;
+    margin-right: 20px;
+}
+.project-block:last-child {
+    margin-right: 0;
+}
+.project-block > .project-icon > img {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+}
+.project-block > .project-description {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    line-height: 1.2em;
+}
+
+/* -------- BLOCK: Footer (Contacts) --------- */
+
+footer {
+    background: url(../images/footer-bg-1920.jpg) no-repeat left;
+    height: 1000px; 
+}
+
+.contacts-block {
+    position: relative;
+    left: 687px;
+    top: 158px;
+    width: 670px;
+}
+
+.contacts-block h2 {
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 32px;
+}
+.contacts-block p {
+    line-height: 1.2em;
+    margin-bottom: 25px;
+}
+.contacts-block .messenger-text {
+    display: block;
+    padding: 0 130px;
+    margin-top: 40px;
+}
+.contacts-block .inputstyle, 
+.contacts-block .textareastyle {
+    display: block;
+    font-size: 20px;
+    line-height: 1.2rem;
+    margin: 0 0 20px 0;
+    padding: 5px 15px;
+    background-color: #D9D9D9;
+    background-clip: padding-box;
+    border: 1px solid #000;
+    border-radius: 15px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-inout;
+}
+.contacts-block .inputstyle::placeholder,
+.contacts-block .textareastyle::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+.contacts-block .inputstyle:focus,
+.contacts-block .textareastyle:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #000;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.contacts-block .textareastyle {
+    width: 100%;
+    height: 130px;
+    resize: none;
+}
+.contacts-block .submit {
+    display: inline-block;
+    text-align: center;
+    background-color: #F29F21;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: 550;
+    color: #fff;
+    padding: 17px 40px 19px 40px;    
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+.contacts-block .submit:hover {
+    background-color: #D38209;
+}
+
+.contacts-block .social-networks {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 58px;
+}
+.contacts-block .social-networks div {
+    margin-right: 20px;
+}
+.contacts-block .social-networks div:last-child {
+    margin-right: 0;
+}
+.contacts-block .social-networks a {
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+.contacts-block .social-networks a:hover {
+    opacity: 0.4;
+}
+.contacts-block .social-networks img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* -------- Responsive Settings --------- */
+/* HD Resolution */
+@media screen and (max-width: 1400px) {
+    header {
+        background: url(../images/header-bg-1400.jpg) no-repeat right;
+        height: 434px;
+    }
+    header .logo {
+        margin-left: 80px;
+        margin-top: 60px;
+    }
+    header .logo .first {
+        font-size: 50px;
+        line-height: 70px;    
+    }
+    header .logo .second {  
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    header .header-text {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 45px;
+    }
+    header button {
+        border-radius: 30px;
+        font-size: 20px;
+        padding: 13px 20px 16px 20px;
+        margin-top: 58px;
+    }
+    header nav ul {        
+        margin-right: 312px;
+        margin-top: 93px;
+    }
+    header nav li {
+        margin-right: 30px;
+    }
+    header nav a {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    main {
+        padding: 70px 80px;
+    }
+    .about-me > .photo {
+        width: 400px;
+        height: 400px;
+    }
+    .about-me > .photo > img {
+        border-radius: 15px;
+    }
+    .about-me > .welcome-text {
+        margin-left: 80px;
+    }
+    .about-me > .welcome-text > h1 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    .about-me > .welcome-text > p {
+        font-size: 16px;
+    }
+    .about-me > .welcome-text > button {
+        border-radius: 30px;
+        font-size: 18px;
+        padding: 13px 20px 16px 20px;
+        margin-top: 20px;
+    }
+    .works {
+        margin-top: 80px;
+    }
+    .works > .title > h2 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    .works > .title.last > h2 {
+        margin-top: 30px;
+    }
+    .project-block {
+        margin-right: 15px;
+    }
+    .project-block > .project-icon > img {
+        border-radius: 15px;
+    }
+    .project-block > .project-description {
+        margin-top: 15px;
+        font-size: 16px;        
+    }
+    footer {
+        background: url(../images/footer-bg-1400.jpg) no-repeat left;
+        height: 705px; 
+    }
+    .contacts-block {
+        left: 500px;
+        top: 115px;
+        width: 494px;
+    }
+    .contacts-block h2 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .contacts-block p {
+        font-size: 16px;
+    }
+    .contacts-block .messenger-text {
+        padding: 0 80px;
+        margin-top: 30px;
+    }
+    .contacts-block .inputstyle, 
+    .contacts-block .textareastyle {
+        font-size: 16px;
+        margin: 0 0 15px 0;
+        padding: 3px 10px;
+        border-radius: 10px;
+    }
+    .contacts-block .textareastyle {
+        height: 100px;
+    }
+    .contacts-block .submit {
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 13px 20px 14px 20px;    
+    }
+    .contacts-block .social-networks {
+        margin-top: 40px;
+    }
+    .contacts-block .social-networks div {
+        margin-right: 15px;
+    }
+    .contacts-block .social-networks img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* Большие планшеты */
+@media screen and (max-width: 991px) {
+    header {
+        background: url(../images/header-bg-991.jpg) no-repeat right;
+        height: 307px;
+    }
+    header .logo {
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    header .logo .first {
+        font-size: 40px;
+        line-height: 50px;    
+    }
+    header .logo .second {  
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    header .header-text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 25px;
+    }
+    header button {
+        border-radius: 20px;
+        font-size: 15px;
+        padding: 5px 15px 6px 15px;
+        margin-top: 40px;
+    }
+    header nav ul {        
+        margin-right: 220px;
+        margin-top: 60px;
+    }
+    header nav li {
+        margin-right: 20px;
+    }
+    header nav a {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    main {
+        padding: 40px 50px;
+    }
+    .about-me > .photo {
+        width: 320px;
+        height: 320px;
+    }
+    .about-me > .photo > img {
+        border-radius: 10px;
+    }
+    .about-me > .welcome-text {
+        margin-left: 50px;
+    }
+    .about-me > .welcome-text > h1 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+    .about-me > .welcome-text > p {
+        font-size: 14px;
+    }
+    .about-me > .welcome-text > button {
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 5px 15px 6px 15px;
+        margin-top: 15px;
+    }
+    .works {
+        margin-top: 40px;
+    }
+    .works > .title > h2 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+    .works > .title.last > h2 {
+        margin-top: 25px;
+    }
+    .project-block {
+        margin-right: 10px;
+    }
+    .project-block > .project-icon > img {
+        border-radius: 10px;
+    }
+    .project-block > .project-description {
+        margin-top: 10px;
+        font-size: 14px;        
+    }
+    footer {
+        background: url(../images/footer-bg-991.jpg) no-repeat left;
+        height: 467px; 
+    }
+    .contacts-block {
+        left: 355px;
+        top: 80px;
+        width: 350px;
+    }
+    .contacts-block h2 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .contacts-block p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .contacts-block .messenger-text {
+        padding: 0 40px;
+        margin-top: 10px;
+    }
+    .contacts-block .inputstyle, 
+    .contacts-block .textareastyle {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+        padding: 1px 10px;
+        border-radius: 8px;
+    }
+    .contacts-block .textareastyle {
+        height: 50px;
+    }
+    .contacts-block .submit {
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 5px 15px 6px 15px;    
+    }
+    .contacts-block .social-networks {
+        margin-top: 15px;
+    }
+    .contacts-block .social-networks div {
+        margin-right: 10px;
+    }
+    .contacts-block .social-networks img {
+        width: 15px;
+        height: 15px;
+    }    
+}
+
+/* Средние планшеты */
+@media screen and (max-width: 767px) {
+    header {
+        background: url(../images/header-bg-767.jpg) no-repeat right;
+        height: 238px;
+    }
+    header .logo {
+        margin-left: 38px;
+        margin-top: 38px;
+    }
+    header .logo .first {
+        font-size: 30px;
+        line-height: 25px;    
+    }
+    header .logo .second {  
+        font-size: 11px;
+        margin-top: 0px;
+    }
+    header .header-text {
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 14px;
+    }
+    header button {
+        border-radius: 20px;
+        font-size: 11px;
+        padding: 3px 10px 4px 10px;
+        margin-top: 30px;
+    }
+    header nav ul {        
+        margin-right: 162px;
+        margin-top: 42px;
+    }
+    header nav li {
+        margin-right: 10px;
+    }
+    header nav a {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    main {
+        padding: 30px 38px;
+    }
+    .about-me > .photo {
+        width: 250px;
+        height: 250px;
+    }
+    .about-me > .photo > img {
+        border-radius: 10px;
+    }
+    .about-me > .welcome-text {
+        margin-left: 38px;
+    }
+    .about-me > .welcome-text > h1 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    .about-me > .welcome-text > p {
+        font-size: 12px;        
+    }
+    .about-me > .welcome-text > button {
+        border-radius: 30px;
+        font-size: 11px;
+        padding: 3px 10px 4px 10px;
+        margin-top: 10px;
+    }
+    .works {
+        margin-top: 38px;
+    }
+    .works > .title > h2 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    .works > .title.last > h2 {
+        margin-top: 20px;
+    }
+    .project-block {
+        margin-right: 10px;
+    }
+    .project-block > .project-icon > img {
+        border-radius: 10px;
+    }
+    .project-block > .project-description {
+        margin-top: 10px;
+        font-size: 12px;        
+    } 
+    footer {
+        background: url(../images/footer-bg-767.jpg) no-repeat left;
+        height: 415px; 
+    }
+    .contacts-block {
+        left: 273px;
+        top: 58px;
+        width: 280px;
+    }
+    .contacts-block h2 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .contacts-block p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .contacts-block .messenger-text {
+        padding: 0;
+        margin-top: 5px;
+    }
+    .contacts-block .inputstyle, 
+    .contacts-block .textareastyle {
+        font-size: 12px;
+        margin: 0 0 5px 0;
+        padding: 1px 8px;
+        border-radius: 5px;
+    }
+    .contacts-block .textareastyle {
+        height: 50px;
+    }
+    .contacts-block .submit {
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 3px 8px 4px 8px;    
+    }
+    .contacts-block .social-networks {
+        margin-top: 20px;
+    }
+    .contacts-block .social-networks div {
+        margin-right: 10px;
+    }
+    .contacts-block .social-networks img {
+        width: 15px;
+        height: 15px;
+    }    
+}
+
+/* Телефоны */
+@media screen and (max-width: 479px) {
+}

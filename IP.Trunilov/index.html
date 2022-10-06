@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">        
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--script src="" async defer></script-->
+	</head>
+	<body>      
+		<header>
+			<div class="logo">
+				<div class="first">IP.Trunilov</div>
+				<div class="second">ИП Трунилов | Портфолио</div>
+				<div class="header-text">Разработка Web-продуктов любой сложности:<br />от сайта-визитки до CRM-системы</div>
+				<button>Оставить заявку</button>
+			</div>            
+			<nav>
+				<ul>
+					<li><a href="#about">О себе</a></li>
+					<li><a href="#works">Работы</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>	        
+		<main>
+			<article class="about-me" id="about">
+				<div class="photo"><img src="images/my-photo-1920.jpg" alt="IP.Trunilov"></div>
+				<div class="welcome-text">
+					<h1>Здравия! Меня зовут Михаил и я - web-разработчик</h1>
+					<p>Категорически приветствую всех у себя на страничке!</p>
+					<p>Позвольте представить Вам самые интересные проекты, которые мне совместно с моей командой довелось реализовать.</p>					
+					<p>Более чем за 15 лет работы в сфере web-development удалось поучаствовать в разработке огромного количества  всевозможных проектов. От теплых и уютных сайтов-визиток,  до суровых и могучих CRM-систем в помощь корпоративному  бизнесу моих дорогих клиентов.</p>
+					<p>Мы неизменно стараемся идти в ногу со временем, сиречь использовать все основные и передовые технологии web-разработки, а так же не забывать про добрый и “ламповый” подход к каждому заказчику и потенциальному клиенту.</p>
+					<p>Я рад буду любому конструктивному общению и постараюсь Вам помочь!</p>
+					<button>Оставить заявку</button>
+				</div>
+			</article>
+			<article class="works" id="works">
+				<div class="title"><h2>Мои работы</h2></div>
+				<div class="projects">
+					<div class="project-block">
+						<div class="project-icon"><img src="images/projects/foreverliving.jpg" alt=""></div>
+						<div class="project-description">Корпоративный портал с личным кабинетом, интернет магазин с функцией покупки, оплаты, интеграция с 1С, нелинейная система бонусных поощрений и многе другое</div>
+					</div>
+					<div class="project-block">
+						<div class="project-icon"><img src="images/projects/rsins.jpg" alt=""></div>
+						<div class="project-description">Личный кабинет для обслуживания действующих и завершенных договоров страхования клиентов компании, интеграция с корпоративной API</div>
+					</div>
+					<div class="project-block">
+						<div class="project-icon"><img src="images/projects/chienergy.jpg" alt=""></div>
+						<div class="project-description">Мобильное приложение для Android и iOs, а так же корпоративный promo-сайт по тематике Восточной предсказательной технллогии</div>
+					</div>
+					<div class="project-block">
+						<div class="project-icon"><img src="images/projects/herbalife.jpg" alt=""></div>
+						<div class="project-description">Разработка, поддержка и модернизация основного и дополнительных (Promo) web-сайтов</div>
+					</div>
+				</div>
+				<div class="title last"><h2>... и многое другое!</h2></div>
+			</article>
+		</main>        
+		<footer id="contacts">
+			<div class="contacts-block">
+				<h2>Контакты</h2>
+				<p>Для всех желающих связаться со мной, могу порекомендовать заполнить нижепредложенную форму:</p>
+				<form>
+					<input class="inputstyle" id="name" type="text" name="name"placeholder="Иванов Иван" required>
+					<input class="inputstyle" id="phone" type="tel" name="phone" placeholder="+7-999-999-9999" required pattern="+[1-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+					<input class="inputstyle" id="email" type="email" name="email" placeholder="writer@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="3" maxlength="64">
+					<textarea class="textareastyle" id="message" required placeholder="Ваше сообщение..."></textarea>
+					<input class="submit" type="submit" value="Отправить сообщение">
+				</form>
+				<p class="messenger-text">... или найдите меня в одном из мессенджеров или социальной сети</p>
+				<div class="social-networks">
+					<div><a href=""><img src="images/youtube.png" alt="YouTube"></a></div>
+					<div><a href=""><img src="images/facebook.png" alt="Facebook"></a></div>
+					<div><a href=""><img src="images/instagram.png" alt="Instagram"></a></div>
+					<div><a href=""><img src="images/telegram.png" alt="Telegram"></a></div>
+					<div><a href=""><img src="images/vk.png" alt="VK"></a></div>
+					<div><a href=""><img src="images/whatsapp.png" alt="Whatsapp"></a></div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
