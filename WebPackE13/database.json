@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "Post1",
+      "body": "Это тест первого поста!",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "Post 2",
+      "body": "Это тест второго поста",
+      "userId": 324,
+      "id": 3
+    },
+    {
+      "title": "Post 3",
+      "body": "Устал постить",
+      "userId": 34324231,
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
